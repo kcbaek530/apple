@@ -1,176 +1,152 @@
-<!doctype html>
-<html lang="ko" >
+<html lang="en">
 <head>
-    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
-    <meta charset="utf-8">
-    
-    <!-- 사이트 메타 태그 -->
-    <meta name="description" content="Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more.">
-    <meta name="keywords" content="Movie,TV,Shows,Online">
-    <meta name="author" content="Netflix">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>      
+      * { margin: 0; padding: 0;}
 
-    <!-- 뷰포트 세팅 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      @font-face {
+         font-family: 'SF Pro KR';
+         font-style: normal;
+         font-weight: 200;
+         src: url('font/SFProKRDisplay_light.woff2') format('woff2');
+         font-display: swap;
+       
+      }
 
-    <!--  css 링크 -->
-    <link rel="stylesheet" type="text/css" href="css/destyle.css"> <!-- 초기화 CSS-->
+      @font-face {
+         font-family: 'SF Pro KR';
+         font-style: normal;
+         font-weight: 400;
+         src: url('font/SFProKRDisplay_regular.woff2') format('woff2') ;
+         font-display: swap;
+      }
 
-    <link rel="stylesheet" type="text/css" href="css/index.css"> <!-- Home 화면 CSS-->
+      @font-face {
+         font-family: 'SF Pro KR';
+         font-style: normal;
+         font-weight: 600;
+         src: local('font/SFProKRDisplay_semibold.woff2') format('woff2');
+         font-display: swap;
+      }
 
-    <!-- 구글 Noto Sans KR 웹폰트 링크 -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet"> -->
+      @font-face {
+         font-family: 'SF Pro KR';
+         font-style: normal;
+         font-weight: 800;
+         src: url('font/SFProKRDisplay_bold.woff2') format('woff2');
+         font-display: swap;
+      }
 
-    <script>
-        
-        /* 변수 선언 */
+      .model_icon_wrap {  width:286px; margin: 0; padding:0; margin:0 auto;
+      display: flex; flex-direction: column; justify-content: flex-end;}
 
-        var faq_state = 0; /* 헤더 보이기 상태 */
+      .model_comp {  
+         width: 980px; 
+         margin: 0 auto;
+         padding: 100px 200px;
+         background-color: rgb(242,242,242);
+         display: flex;}
+      .model_wrap { width: 33.3%; padding: 0 20px; display: flex; flex-direction: column; justify-content: flex-end;}
 
-        function faq_click(id) { 
+      h3 { font-family: 'SF Pro KR', serif; font-size: 24px;  font-weight: 600; line-height: 31px; margin: 0 0 4px;}  
+      ul { list-style: none; margin-top: 56px;}
+      p, li { font-family:serif; font-size:14px; font-style: 400; line-height: 22px; margin:14px 0 ;}
 
-            
+      .macbook_air { width: 286px; height: 168px;
+         background-image: url(img/macbook_air.jpg); 
+         background-size: 286px 168px;
+         background-repeat: no-repeat;
+         background-position: center bottom;
+         display: block;
+         margin-left:-27px;  
+         margin-bottom: 30px; 
+      }
+      .macbook_pro_13 { width: 286px; height: 168px;
+         background-image: url(img/macbook_pro_13.jpg); 
+         background-size: 286px 168px;
+         background-repeat: no-repeat;
+         background-position: center bottom;
+         display: block;
+         margin-left:-27px;  
+         margin-bottom: 30px; 
+      }
 
-            if ( id.nextElementSibling.style.display == "block" ) { 
-                id.classList.toggle("active");
-                id.nextElementSibling.style.display = "none";
-                
-            } 
-            else {  
+      .macbook_pro_16 { width: 334px; height: 194px;
+         background-image: url(img/macbook_pro_16.jpg); 
+         background-size: 334px 194px;
+         background-repeat: no-repeat;
+         background-position: center bottom;
+         display: block;
+         margin-left:-32px;  
+         margin-bottom: 30px; 
+      }
 
-                 /*
-                var panel = document.getElementsByClassName ("faq_panel");
-                var accordion = document.getElementsByClassName ("faq_accordion");
-               
-                panel[0].style.display= "none";
-                panel[1].style.display= "none";
-                panel[2].style.display= "none";
-                panel[3].style.display= "none";
-                panel[4].style.display= "none";
-                panel[5].style.display= "none";
-                
-                
-                var i;
-                for (i = 0; i < panel.length; i++) { 
-                    panel[i].style.display= "none";  }
-
-                    */
-            
-                id.nextElementSibling.style.display = "block";
-                id.classList.toggle("active");
-                } 
-
-            }
-
-    </script>
+   </style>
 </head>
-
 <body>
+   <div class="model_comp">
+      <div class="model_wrap">
+         <div class="model_icon_wrap">
+            <figure class="macbook_air"></figure>
+            <h3>MacBook Air</h3>
+            <p>₩1,320,000부터</p>
+         </div>
 
-<header class="home_header">
-      <img src="img/n_logo.svg" id="logo"> 
-      <button>로그인</button>
-</header>
+         <ul class="feature-list list list-nobullet typography-body-reduced">
+            <li class="list-item">13.3형 Retina 디스플레이<sup><a href="#footnote-2" class="footnote">1</a></sup></li>
+            <li class="list-item">최대 4코어 Intel Core i7 프로세서</li>
+            <li class="list-item">최대 16GB 메모리</li>
+            <li class="list-item">최대 2TB 저장 장치<sup><a href="#footnote-3" class="footnote">2</a></sup></li>
+            <li class="list-item">최대 11시간의 배터리 사용 시간<sup><a href="#footnote-4" class="footnote">3</a></sup></li>
+            <li class="list-item">Touch ID
+            </li>
+            <li class="list-item">백라이트 Magic Keyboard</li>
+         </ul>
 
-<main>
-   <section class="home_hero">
-      <div class="hero_container">
-         <h1 class="text_align_center">영화, TV 프로그램을<br>무제한으로.</h1>
-         <h2>다양한 디바이스에서 시청하세요. 언제든 해지하실 수 있습니다.</h2>
-         <form action="join.php" class="form_email">
-            <input type="email" id="e_mail" name="user_email" placeholder="이메일 주소"></input>
-            <button type="submit"><h3>30일&nbsp;무료&nbsp;이용 ></h3></button>
-         </form>
-         <p>시청할 준비가 되셨나요? 계정을 등록하거나 액세스하려면 이메일 주소를 입력하세요.</p>
-       </div>
+      </div>
 
-   </section>
+      <div class="model_wrap">
+         <div class="model_icon_wrap">
+            <figure class="macbook_pro_13"></figure>
+            <h3>MacBook Pro 13형</h3>
+            <p>₩1,720,000부터</p>
+         </div>
 
-   <section class="faq">
+         <ul class="feature-list list list-nobullet typography-body-reduced">
+            <li class="list-item">13.3형 Retina 디스플레이<sup><a href="#footnote-2" class="footnote">1</a></sup></li>
+            <li class="list-item">최대 4코어 Intel Core i7 프로세서</li>
+            <li class="list-item">최대 16GB 메모리</li>
+            <li class="list-item">최대 2TB 저장 장치<sup><a href="#footnote-3" class="footnote">2</a></sup></li>
+            <li class="list-item">최대 11시간의 배터리 사용 시간<sup><a href="#footnote-4" class="footnote">3</a></sup></li>
+            <li class="list-item">Touch ID
+            </li>
+            <li class="list-item">백라이트 Magic Keyboard</li>
+         </ul>
 
-    <div class="faq_container">
+      </div>
 
-        <h1 class="faq_title h1_sans">자주 묻는 질문</h1>
+      <div class="model_wrap">
+         <div class="model_icon_wrap">
+            <figure class="macbook_pro_16"></figure>
+            <h3>MacBook Pro 16형</h3>
+            <p>₩3,190,000부터</p>
+         </div>
 
-        <button class="faq_accordion" onclick="faq_click(this)"><h2>넷플릭스란 무엇인가요?</h2></button>
-                        
-        <div class="faq_panel" id="panel"><h4 class="faq_text">
-                    넷플릭스는 각종 수상 경력에 빛나는 TV 프로그램, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.<br><br>저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 TV 프로그램과 영화가 제공됩니다.
-                </h4>
-        </div>
-        
-        <button class="faq_accordion" onclick="faq_click(this)"><h2>넷플릭스 요금은 얼마인가요?</h2></button>
-        <div class="faq_panel"  id="panel"><h4 class="faq_text">
-                    스마트폰, 태블릿, 스마트 TV, 노트북, 스트리밍 디바이스 등 다양한 디바이스에서 저렴한 월정액 요금 하나로 넷플릭스를 시청하세요. 멤버십 요금은 월 9,500원부터 다양합니다. 추가 비용이나 약정이 없습니다.
-                </h4>
-        </div>
-        
-        <button class="faq_accordion" onclick="faq_click(this)"><h2>어디에서 시청할 수 있나요?</h2></button>
-        <div class="faq_panel"><h4 class="faq_text">
-                    다양한 디바이스에서 언제 어디서나 시청할 수 있습니다. 넷플릭스 계정으로 로그인하면 PC에서 netflix.com을 통해 바로 시청할 수 있으며, 인터넷이 연결되어 있고 넷플릭스 앱을 지원하는 디바이스(스마트 TV, 스마트폰, 태블릿, 스트리밍 미디어 플레이어, 게임 콘솔 등)에서도 언제든지 시청할 수 있습니다.<br><br>iOS, Android, Windows 10용 앱에서는 좋아하는 프로그램을 저장할 수도 있습니다. 저장 기능을 이용해 이동 중이나 인터넷에 연결할 수 없는 곳에서도 시청하세요. 넷플릭스는 어디서든 함께니까요.
-                </h4>
-        </div>
-        
-    <button class="faq_accordion" onclick="faq_click(this)"><h2>멤버쉽을 해지하려면 어떻게 하나요?</h2></button>
-        <div class="faq_panel"><h4 class="faq_text">
-                    넷플릭스는 부담 없이 간편합니다. 성가신 계약도, 약정도 없으니까요. 멤버십 해지도 온라인에서 클릭 두 번이면 완료할 수 있습니다. 해지 수수료도 없으니 원할 때 언제든 계정을 시작하거나 종료하세요.
-                </h4>
-        </div>
+         <ul class="feature-list list list-nobullet typography-body-reduced">
+            <li class="list-item">13.3형 Retina 디스플레이<sup><a href="#footnote-2" class="footnote">1</a></sup></li>
+            <li class="list-item">최대 4코어 Intel Core i7 프로세서</li>
+            <li class="list-item">최대 16GB 메모리</li>
+            <li class="list-item">최대 2TB 저장 장치<sup><a href="#footnote-3" class="footnote">2</a></sup></li>
+            <li class="list-item">최대 11시간의 배터리 사용 시간<sup><a href="#footnote-4" class="footnote">3</a></sup></li>
+            <li class="list-item">Touch ID
+            </li>
+            <li class="list-item">백라이트 Magic Keyboard</li>
+         </ul>
 
-    <button class="faq_accordion" onclick="faq_click(this)"><h2>넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</h2></button>
-        <div class="faq_panel"><h4 class="faq_text">
-            넷플릭스는 장편 영화, 다큐멘터리, TV 프로그램, 애니메이션, 각종 상을 수상한 넷플릭스 오리지널 등 수많은 콘텐츠를 확보하고 있습니다. 마음에 드는 콘텐츠를 원하는 시간에 원하는 만큼 시청하세요. 30일 무료 이용으로 넷플릭스의 무한한 콘텐츠 세상을 만나보세요.
-                </h4>
-        </div>
+      </div>
 
-    <button class="faq_accordion" onclick="faq_click(this)"><h2>무료 이용에 관해 자세히 알 수 있을까요?</h2></button>
-        <div class="faq_panel"><h4 class="faq_text">
-            넷플릭스를 30일 동안 무료로 이용해 보세요. 마음에 드는 경우 계속 이용하시면 됩니다. 별도로 해지하지 않는 한, 멤버십이 자동으로 유지됩니다. 무료 이용 기간이 끝나기 전에 멤버십을 해지하면 요금이 청구되지 않습니다. 복잡한 계약, 약정, 해지 수수료가 없습니다. 언제든 온라인으로 해지하세요.
-                </h4>
-        </div>
-
-    </div>  
-
-   </section>
-
-</main>
-
-
-
-
-
-
-
-<!-- footer 시작 선택자 사용 -->
-
-
-<!--
-<footer class="home_footer bg_color_black white">
-
-   <div>
-       <div class="footer_content_left" >
-          <div>NETFLIX</div>
-          <p>Make something you love.</p>
-       </div>
-
-       <div class="footer_content_right" >
-           <div>
-              <a href="hello.html">Hello</a>
-              <a href="work.html">Work</a>
-              <a href="about.html">About</a>
-              <a href="careers.html">Careers</a>
-              <a href="contact.html" class="margin_right_none">Contact</a>
-           </div>
-           <p class="footer_aside">© 2020 Huge LLC. Legal.<br>
-               CCPA Privacy Notice<br>
-               Modern Slavery Act Statement 
-           </p>
-
-       </div>
    </div>
-
-</footer>
-
- -->
-
 </body>
 </html>
