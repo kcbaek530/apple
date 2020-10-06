@@ -1,0 +1,307 @@
+#gnb { position: static;    } 
+/* LNB 스타일 */
+#lnb_mac { padding: 8px 0; height: 100px; background-color:rgb(245,245,247,0.6);}
+.lnb_menu { display: flex; width:1120px; margin: 0 auto; justify-content: space-between;}
+
+.lnb_menu a { text-align:center;}
+
+.lnb_menu a:hover {
+   text-decoration: none; color:#2997ff;
+ }
+.lnb_menu span:hover { 
+  color:#2997ff; text-decoration: none;
+}
+
+.lnb_menu span { 
+   display:block;
+   color:rgb(29,29,31);
+   
+   font-family:'SF Pro KR';
+   font-size:12px;
+   font-weight: 400;
+   font-style: normal;
+   line-height: 16px;
+} 
+
+.lnb_menu_icon_macbookair, .lnb_menu_icon_macbookpro13, .lnb_menu_icon_macbookpro16, .lnb_menu_icon_imac, .lnb_menu_icon_imacpro, .lnb_menu_icon_macpro, .lnb_menu_icon_macmini, .lnb_menu_icon_maccomp, .lnb_menu_icon_prodisplayxdr, .lnb_menu_icon_macacc, .lnb_menu_icon_macosx
+
+{
+   height: 54px;
+   background-repeat: no-repeat;
+   background-position: center bottom;
+   margin: 0 auto 4px;
+   display: block;
+
+}
+.lnb_menu_icon_macbookair { 
+   
+   width: 52px;
+   background-image: url(../mac/img/macbookair.svg);
+   background-size: 52px 54px;
+   
+}
+
+.lnb_menu_icon_macbookpro13 { 
+
+   width: 54px;
+   background-image: url(../mac/img/macbook_pro_13.svg);
+   background-size: 54px 54px;
+}
+
+.lnb_menu_icon_macbookpro16 { 
+   width: 60px;
+   background-image: url(../mac/img/macbook_pro_16.svg);
+   background-size: 60px 54px;
+}
+
+.lnb_menu_icon_imac{ 
+   width: 48px;
+   background-image: url(../mac/img/imac.svg);
+   background-size: 48px 54px;
+}
+
+.lnb_menu_icon_imacpro { 
+   width: 48px;
+   background-image: url(../mac/img/imac_pro.svg);
+   background-size: 48px 54px;
+}
+
+.lnb_menu_icon_imacpro { 
+   width: 48px;
+   background-image: url(../mac/img/imac_pro.svg);
+   background-size: 48px 54px;
+}
+
+.lnb_menu_icon_macpro { 
+   width: 37px;
+   background-image: url(../mac/img/mac_pro.svg);
+   background-size: 37px 54px;
+}
+
+.lnb_menu_icon_macmini { 
+   width: 28px;
+   background-image: url(../mac/img/macmini.svg);
+   background-size: 28px 54px;
+}
+
+.lnb_menu_icon_maccomp { 
+   width: 70px;
+   background-image: url(../mac/img/mac_comp.svg);
+   background-size: 70px 54px;
+}
+
+.lnb_menu_icon_prodisplayxdr { 
+   width: 48px;
+   background-image: url(../mac/img/pro_display_xdr.svg);
+   background-size: 48px 54px;
+}
+
+.lnb_menu_icon_macacc { 
+   width: 29px;
+   background-image: url(../mac/img/mac_acc.svg);
+   background-size: 48px 54px;
+}
+
+.lnb_menu_icon_macosx { 
+   width: 42px;
+   background-image: url(../mac/img/mac_osx.svg);
+   background-size: 42px 54px;
+}
+
+.lnb_menu li .lnb_menu_span_new {
+   color:rgb(191,72,0);
+   font-family:'SF Pro KR';
+   font-size:10px;
+   font-weight: 400;
+   font-style: normal;
+   line-height: 12px;; 
+}
+
+
+
+ 
+/* .lnb_menu_span_new {
+   color:rgb(191,72,0);
+   font-family:'SF Pro KR';
+   font-size:10px;
+   font-weight: 400;
+   font-style: normal;
+   line-height: 12px;; 
+} */
+
+/* Hero 섹션 스타일 */
+
+/* Hero iMac 스타일 */
+
+.hero_imac_wrap, .hero_macbookair_wrap,.hero_macbookpro_wrap { width: 980px; margin: 0 auto; display:flex;
+align-items: center; padding:60px 0; }
+
+.hero_imac_text { width: 33.33333%;  }
+
+.hero_imac_img { width: 66.66666%; }
+
+.hero_imac_text span { display: block; margin:0 0 4px;} 
+.hero_imac_text span:first-child {color:rgb(245,99,0);}
+
+.h2_subtitle_21 { 
+   font-family: 'SF Pro KR', 'SF PRo Display',sans-serif;
+   font-size:21px;
+   font-weight:600;
+   font-style:normal;
+   line-height:29px;
+   -webkit-font-smoothing: antialiased; }
+
+.hero_imac_text h3 { line-height: 60px;}  
+.hero_imac_text h3 { line-height: 35px;}
+
+/* .hero_imac_link_buy { width:86px; height: 36px; display: block;
+border-radius: 18px;
+  background-color: rgb(0,113,227); color:white;} */
+
+
+.hero_imac_link div a:first-child {  
+padding: 8px 16px; 
+border-radius: 18px;
+background-color: rgb(0,113,227); color:white;
+font-family: 'SF Pro KR', 'SF Pro Text', sans-serif;
+font-size:17px; 
+font-weight:400; 
+line-height: 20px;
+-webkit-font-smoothing: antialiased;
+text-decoration: none;}
+
+.hero_imac_link a:last-child {  
+  
+   font-family: 'SF Pro KR', 'SF Pro Text', sans-serif;
+   font-size:21px; font-weight:400; 
+   line-height: 32px; 
+   -webkit-font-smoothing: antialiased; }
+
+.hero_imac_link { margin: 30px 0;}
+
+
+.hero_imac_img figure { 
+width:726px; height:550px;
+background-image: url('../mac/img/hero_imac.jpg');
+background-size: 726px 550px;
+background-repeat: no-repeat;
+margin:0 0 0 -14px;
+
+}
+
+
+/* Hero Macbook Air 스타일 */
+
+.hero_macbookair_img figure { 
+   width:983px; height:150px;
+   background-image: url('../mac/img/hero_macbook_air.jpg');
+   background-size: 983px 150px;
+   background-repeat: no-repeat;
+   margin:0 0 0 -409px; }
+
+.margin_left_72 { margin-left:72px;}
+
+/* Hero Macbook Air 스타일 */
+
+.hero_macbookpro_img figure { 
+   width:647px; height:232px;
+   background-image: url('../mac/img/hero_macbook_pro_13.jpg');
+   background-size: 647px 232px;
+   background-repeat: no-repeat;
+   margin:0 0 0 52px; }
+
+/* Section Macbook 비교하기 스타일 */
+
+#macbook_comp {  }
+
+.macbook_comp_wrap { width: 1380px; 
+margin:0 auto 30px; padding: 114px 0 80px 0;
+background:rgb(242,242,242);}
+
+.macbook_comp_title { margin:0 0 60px 0; text-align: center;}
+
+.macbook_comp_link { text-align: center; margin: 0 0 75px;}
+
+.macbook_comp_model_wrap { display: flex; width: 980px; margin:0 auto;}
+
+.macbook_comp_model_1, .macbook_comp_model_2, .macbook_comp_model_3 { width: 33.33333%; padding:0 20px;}
+
+.macbook_comp_model_1 figure {
+   width:286px; height: 168px;
+   background-size: 286px 168px;
+   background: url(../mac/img/macbook_air.jpg) no-repeat center;
+   margin: 0 -27px 30px;
+}
+
+.macbook_comp_model_1 h3 {line-height: 31px; margin: 0 0 4px;}
+
+.macbook_comp_model_1 p
+{  font-size:14px;
+   line-height: 22px; margin: 0 0 4px;}
+
+.macbook_comp_model_1_list {margin:54px 0 54px 0;}
+
+.macbook_comp_model_1_list li {
+   color:rgb(29,29,31);
+   font-family: 'SF Pro KR', 'SF Pro Text' sans-serif;
+   font-size:14px;
+   font-weight:400;
+   font-style: normal;
+   line-height: 22px;  
+   -webkit-font-smoothing: antialiased;
+   margin:16px 0 0 0;
+}
+
+.macbook_comp_model_1_link_buy { margin: 60px 0 20px;}
+
+.macbook_comp_model_1_link_buy a {
+   
+   padding:4px 11px; 
+   color:rgb(255,255,255); background-color: rgb(0,113,227); border-radius:12px; 
+   font-family: 'SF Pro KR', 'SF Pro Text' sans-serif;
+   font-size:12px;
+   font-weight:400;
+   font-style: normal;
+   line-height: 16px;  
+   -webkit-font-smoothing: antialiased;
+   text-decoration: none;
+
+}
+
+.macbook_comp_model_1_link_more a {
+   
+   color:rgb(0,102,204); 
+   font-family: 'SF Pro KR', 'SF Pro Text' sans-serif;
+   font-size:12px;
+   font-weight:400;
+   font-style: normal;
+   line-height: 16px;  
+   -webkit-font-smoothing: antialiased;
+    
+}
+
+.macbook_comp_model_1_link_more span 
+{  color:rgb(0,102,204); 
+   font-family: 'SF Pro KR', 'SF Pro Text' sans-serif;
+   font-size:12px;
+   font-weight:400;
+   font-style: normal;
+   line-height: 16px;  
+   -webkit-font-smoothing: antialiased;
+   }
+
+
+
+.macbook_comp_model_2 figure {
+   width:286px; height: 168px;
+   background-size: 286px 168px;
+   background: url(../mac/img/macbook_pro_13.jpg) no-repeat center;
+   margin: 0 -27px 30px;
+}
+
+.macbook_comp_model_3 figure {
+   width:286px; height: 168px;
+   background-size: 286px 168px;
+   background: url(../mac/img/macbook_pro_16.jpg) no-repeat center;
+   margin: 0 -27px 30px;
+}
